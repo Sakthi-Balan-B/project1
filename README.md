@@ -1,4 +1,4 @@
-# GitHub Users in Delhi
+# GitHub Users in Chicago
 
 This repository contains data about GitHub users in Delhi with over 100 followers and their repositories.
 
