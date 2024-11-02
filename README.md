@@ -14,3 +14,6 @@ This repository contains data about GitHub users in Delhi with over 100 follower
 - Date of collection: 2024-10-31
 - Only included users with 100+ followers
 - Up to 500 most recently pushed repositories per user
+
+##Inference
+- Contributing to popular open-source repositories and being associated with an educational institution may help increase followers and visibility.
