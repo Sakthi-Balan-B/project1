@@ -1,0 +1,26 @@
+import csv
+
+
+users = []
+path = r'D:\Sakthi_the_mass\IITM\TDS\Project1\pro1 (1)\users.csv'
+
+# Read the CSV file with UTF-8 encoding
+with open(path, 'r', encoding='utf-8') as file:
+    reader = csv.DictReader(file)
+    for row in reader:
+        location = row['location'].strip().lower()
+        # Check if the user is from Delhi
+        if 'chicago' in location:
+            users.append({
+                'login': row['login'],
+                'followers': int(row['followers'])
+            })
+
+# Sort users based on followers in descending order
+top_users = sorted(users, key=lambda x: x['followers'], reverse=True)
+
+# Extract the top 5 user logins
+top_5_logins = [user['login'] for user in top_users[:5]]
+
+# Print the result as a comma-separated list
+print(','.join(top_5_logins))
